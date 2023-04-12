@@ -19,3 +19,22 @@ int whole = 2208;
 void setup() {
 
 for (int i = 0; i < 2 ; i++){
+    //measure 1
+  tone(output, G4);  // tone(outputPin,frequency)
+  delay(quarter);    //G
+
+  tone(output, Bb);  //B flat
+  delay(quarter);
+
+  tone(output, C5);  //C
+  delay(quarter);
+
+  noTone(output);  //rest
+  delay(eighth);
+
+  tone(output, G4);  //G
+  delay(quarter);
+  
+  //measure 2
+  noTone(output);  //rest
+  delay(eighth)
