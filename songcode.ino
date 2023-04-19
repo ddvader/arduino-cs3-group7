@@ -37,4 +37,4 @@ for (int i = 0; i < 2 ; i++){
   
   //measure 2
   noTone(output);  //rest
-  delay(eighth)
+  delay(eighth);
