@@ -60,3 +60,11 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, Bb); //B flat
   delay(quarter);
+
+  //measure 4
+    tone(output, G4); //G
+    delay(third);
+    
+    noTone(output); //rest
+    delay(sixteenth);
+  }
