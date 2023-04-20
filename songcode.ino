@@ -68,3 +68,21 @@ for (int i = 0; i < 2 ; i++){
     noTone(output); //rest
     delay(sixteenth);
   }
+//repeat twice
+
+  //measure 5
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(quarter);
+
+  
+  noTone(output); //rest
+  delay(eighth);
+
+  tone(output, G4); //G
+  delay(eighth);
