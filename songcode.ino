@@ -144,3 +144,31 @@ for (int i = 0; i < 2 ; i++){
   tone(output, G4); //G
   delay(eighth);
 
+//measure 11
+;  noTone(output); //rest eighth
+  delay(eighth);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, CC5); // D flat = C sharp
+  delay(eighth);
+
+  tone(output, C5);
+  delay(half);
+
+  //measure 12
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); // C 
+  delay(dotquarter);
+
+  tone(output, Bb); // B flat
+  delay(eighth);
+
+  tone(output, Bb);
+  delay(eighth);
