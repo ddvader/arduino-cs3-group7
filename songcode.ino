@@ -172,3 +172,51 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, Bb);
   delay(eighth);
+
+//measure 13 first ending
+  tone(output, G4);
+  delay(third);
+  
+//meausure 14 second ending
+  tone(output, Bb); // B flat
+  delay(eighth);
+
+  tone(output, G4); //G 
+  delay(third);
+
+  tone(output, F4); // F 
+  delay(eighth);
+
+
+  //measure 15
+  tone(output, G4); // G
+  delay(quarter);
+
+  tone(output, C4); // low C
+  delay(quarter);
+
+  tone(output, F4); // F
+  delay(quarter);
+
+  tone(output, D4); // low D
+  delay(eighth);
+
+  tone(output, F4); // F 
+  delay(eighth);
+
+
+  //measure 16
+  tone(output, F4); // F 
+  delay(eighth);
+
+  tone(output, D4); //D
+  delay(dotquarter);
+
+  noTone(output); // rest  quarter
+  delay(quarter);
+
+  tone(output, C4); // low C
+  delay(eighth);
+
+  tone(output, B3); //low b 
+  delay(eighth);
