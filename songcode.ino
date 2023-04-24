@@ -86,3 +86,28 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, G4); //G
   delay(eighth);
+//measure 6
+  noTone(output); //rest
+  delay(eighth);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, CC5); //C sharp = D Flat
+  delay(eighth);
+
+  tone(output, C5); //C
+  delay(half);
+  
+  //measure 7
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(dotquarter);
+
+  tone(output, Bb); //b flat
+  delay(quarter);
