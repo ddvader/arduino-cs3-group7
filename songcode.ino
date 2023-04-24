@@ -111,3 +111,26 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, Bb); //b flat
   delay(quarter);
+  // measure 9 second ending
+  tone(output, Bb); // B flat
+  delay(eighth);
+
+  tone(output, G4); // G dotted quarter plus half
+  delay(third);
+
+  //measure 10
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output,Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(quarter);
+
+; noTone(output); // eighth rest
+  delay(eighth);
+
+  tone(output, G4); //G
+  delay(eighth);
+
