@@ -242,3 +242,38 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, B3); // low b
   delay(eighth);
+
+  //measure 18
+  tone(output, G3); // low g
+  delay(eighth);
+
+  tone(output, G3);  //low g
+  delay(dotquarter);
+
+  tone(output, D4); // low d
+  delay(eighth);
+
+  tone(output, C4); //low C
+  delay(eighth);
+
+  tone(output, G3); // low g
+  delay(dotquarter);
+
+  //measure 19
+  noTone(output);
+  delay(eighth);
+
+  tone(output, F4); // f
+  delay(eighth);
+
+  tone(output, F4); // f
+  delay(quarter);
+
+  tone(output, D4);// low d
+  delay(eighth);
+
+  tone(output, F4); // f
+  delay(eighth);
+
+  tone(output, D4); //d
+  delay(eighth);
