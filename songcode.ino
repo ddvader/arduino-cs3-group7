@@ -220,3 +220,25 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, B3); //low b 
   delay(eighth);
+
+  //measure 17
+  tone(output, CC4); //low d flat
+  delay(eighth);
+
+  tone(output, C4); // low C
+  delay(eighth);
+  
+  tone(output, B3);  // low b 
+  delay(eighth);
+
+  tone(output, C4); //low c
+  delay(eighth);
+
+  tone(output, C4); // low c
+  delay(eighth);
+
+  tone(output, CC4); // Low d sharp
+  delay(eighth);
+
+  tone(output, B3); // low b
+  delay(eighth);
