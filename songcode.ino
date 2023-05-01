@@ -1,3 +1,19 @@
+//
+/*Notes chart:
+  C     CC     D     Eb   E     F     F#    G     G#    a     Bb    B
+0 16.35 17.32 18.35 19.45 20.60 21.83 23.12 24.50 25.96 27.50 29.14 30.87
+1 32.70 34.65 36.71 38.89 41.20 43.65 46.25 49.00 51.91 55.00 58.27 61.74
+2 65.41 69.30 73.42 77.78 82.41 87.31 92.50 98.00 103.8 110.0 116.5 123.5
+3 130.8 138.6 146.8 155.6 164.8 174.6 185.0 196.0 207.7 220.0 233.1 246.9
+4 261.6 277.2 293.7 311.1 329.6 349.2 370.0 392.0 415.3 440.0 466.2 493.9
+5 523.3 554.4 587.3 622.3 659.3 698.5 740.0 784.0 830.6 880.0 932.3 987.8
+6 1047  1109  1175  1245  1319  1397  1480  1568  1661  1760  1865  1976
+7 2093  2217  2349  2489  2637  2794  2960  3136  3322  3520  3729  3951
+8 4186  4435  4699  4978  5274  5588  5920  6272  6645  7040  7459  7902
+*/
+//bpm 115
+
+ 
 int output = 13;
 int G3 = 196; // low G
 int a3 = 228; // low A
@@ -25,11 +41,11 @@ int third = 1656;
 int whole = 2208;
 
 
-
 void setup() {
 
 for (int i = 0; i < 2 ; i++){
-    //measure 1
+
+  //measure 1
   tone(output, G4);  // tone(outputPin,frequency)
   delay(quarter);    //G
 
@@ -44,11 +60,13 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, G4);  //G
   delay(quarter);
-  
+  //Seb
+
+
   //measure 2
   noTone(output);  //rest
   delay(eighth);
-  
+
   tone(output, Bb);  //B flat
   delay(quarter);
 
@@ -71,14 +89,17 @@ for (int i = 0; i < 2 ; i++){
   tone(output, Bb); //B flat
   delay(quarter);
 
-  //measure 4
+
+  
+    //measure 4
     tone(output, G4); //G
     delay(third);
     
     noTone(output); //rest
     delay(sixteenth);
   }
-//repeat twice
+
+  //repeat twice
 
   //measure 5
   tone(output, G4); //G
@@ -96,7 +117,55 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, G4); //G
   delay(eighth);
-//measure 6
+
+  //measure 6
+  noTone(output); //rest
+  delay(eighth);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, CC5); //C sharp = D Flat
+  delay(eighth);
+
+  tone(output, C5); //C
+  delay(half);
+  
+  //measure 7
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(dotquarter);
+
+  tone(output, Bb);
+  delay(quarter);
+
+  //MEASURE 8 ending 1
+  tone(output, G4);
+  delay(third);
+
+
+  //back to measure 5
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(quarter)
+
+;noTone(output); //rest
+  delay(eighth);
+
+  tone(output, G4); //G
+  delay(eighth);
+
+  //measure 6
   noTone(output); //rest
   delay(eighth);
 
@@ -121,6 +190,7 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, Bb); //b flat
   delay(quarter);
+
   // measure 9 second ending
   tone(output, Bb); // B flat
   delay(eighth);
@@ -144,7 +214,7 @@ for (int i = 0; i < 2 ; i++){
   tone(output, G4); //G
   delay(eighth);
 
-//measure 11
+  //measure 11
 ;  noTone(output); //rest eighth
   delay(eighth);
 
@@ -173,11 +243,53 @@ for (int i = 0; i < 2 ; i++){
   tone(output, Bb);
   delay(eighth);
 
-//measure 13 first ending
+  //measure 13 first ending
   tone(output, G4);
   delay(third);
-  
-//meausure 14 second ending
+
+ //back to measure 10
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output,Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); //C
+  delay(quarter);
+
+;  noTone(output); // eighth rest
+  delay(eighth);
+
+  tone(output, G4); //G
+  delay(eighth);
+
+  //measure 11
+  noTone(output); //rest eighth
+  delay(eighth);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, CC5); // D flat = C sharp
+  delay(eighth);
+
+  tone(output, C5); // C
+  delay(half);
+
+  //measure 12
+  tone(output, G4); //G
+  delay(quarter);
+
+  tone(output, Bb); //B flat
+  delay(quarter);
+
+  tone(output, C5); // C
+  delay(dotquarter);
+
+  tone(output, Bb); // B flat
+  delay(quarter); 
+
+  //meausure 14 second ending
   tone(output, Bb); // B flat
   delay(eighth);
 
@@ -187,6 +299,8 @@ for (int i = 0; i < 2 ; i++){
   tone(output, F4); // F 
   delay(eighth);
 
+
+for (int i = 0; i < 3 ; i++){
 
   //measure 15
   tone(output, G4); // G
@@ -278,7 +392,7 @@ for (int i = 0; i < 2 ; i++){
   tone(output, D4); //d
   delay(eighth);
 
-//measure 20
+  //measure 20
   tone(output, G4); //middle G
   delay(quarter);
 
@@ -310,7 +424,7 @@ for (int i = 0; i < 2 ; i++){
   tone(output, B3); // low b 
   delay(eighth);
 
-//measure 22
+  //measure 22
   tone(output, D4); // low d
   delay(eighth);
 
@@ -656,10 +770,10 @@ for (int i = 0; i < 2 ; i++){
 
   tone(output, G4);
   delay(half);
-
-  // goes to last measure
-  tone(output, C5);
-  delay(eighth);
+}
+ //repeats twice then goes to last measure 48 song ends
+ tone(output, C5);
+ delay(eighth);
 
  tone(output, Bb);
  delay(eighth);
